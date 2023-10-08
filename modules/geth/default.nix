@@ -98,6 +98,8 @@ in {
             in ''
               --ipcdisable ${network} ${jwtSecret} \
               --datadir %S/${serviceName} \
+              --state.scheme path \
+              --discovery.v5 \
               ${concatStringsSep " \\\n" filteredArgs} \
               ${lib.escapeShellArgs cfg.extraArgs}
             '';
