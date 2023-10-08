@@ -158,6 +158,46 @@
       zcli.bin = "zcli";
     };
 
-    overlayAttrs = self'.packages;
+    overlayAttrs = {
+      inherit
+        (self'.packages)
+        besu
+        bls
+        blst
+        charon
+        crytic-compile
+        dirk
+        dreamboat
+        erigon
+        eth2-testnet-genesis
+        eth2-val-tools
+        ethdo
+        ethereal
+        evmc
+        foundry
+        geth
+        geth-sealer
+        lighthouse
+        mcl
+        mev-boost
+        mev-boost-builder
+        mev-boost-prysm
+        mev-boost-relay
+        mev-rs
+        nethermind
+        nimbus
+        prysm
+        sedge
+        slither
+        ssvnode
+        staking-deposit-cli
+        teku
+        vouch
+        vscode-plugin-ackee-blockchain-solidity-tools
+        vscode-plugin-consensys-vscode-solidity-visual-editor
+        web3signer
+        zcli
+        ;
+    };
   };
 }
