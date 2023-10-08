@@ -53,6 +53,7 @@
       eth2-val-tools = callPackage ./utils/eth2-val-tools {inherit bls mcl;};
       ethdo = callPackage ./utils/ethdo {inherit bls mcl;};
       ethereal = callPackage ./utils/ethereal {inherit bls mcl;};
+      rocketpool = callPackage ./utils/rocketpool {};
       sedge = callPackage ./utils/sedge {inherit bls mcl;};
       staking-deposit-cli = callPackage ./utils/staking-deposit-cli {};
       zcli = callPackage ./utils/zcli {};
@@ -149,10 +150,11 @@
       slither.bin = "slither";
 
       # utils
-      eth2-val-tools.bin = "eth2-val-tools";
       eth2-testnet-genesis.bin = "eth2-testnet-genesis";
+      eth2-val-tools.bin = "eth2-val-tools";
       ethdo.bin = "ethdo";
       ethereal.bin = "ethereal";
+      rocketpool.bin = "rocketpool";
       sedge.bin = "sedge";
       staking-deposit-cli.bin = "deposit";
       zcli.bin = "zcli";
@@ -187,6 +189,7 @@
         nethermind
         nimbus
         prysm
+        rocketpool
         sedge
         slither
         ssvnode
